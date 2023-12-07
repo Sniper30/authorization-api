@@ -1,0 +1,15 @@
+version: "3.8"
+
+services:
+  base-de-datos:
+    image: postgres
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_PASSWORD: eLMEJORdelmundo123
+      POSTGRES_USER: Sniper30
+      POSTGRES_DB: nest
+    volumes:
+      - postgres-login-volumen:/var/lib/pgsql/data/
+volumes:
+  postgres-login-volumen: 
